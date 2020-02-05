@@ -1,0 +1,16 @@
+
+<ActionBar title="Artists"></ActionBar>
+
+<GridLayout  >
+        <GridLayout > 
+                <ns-form></ns-form>
+        </GridLayout>
+        <ListView [items]="items" marginTop="230" width="300">
+            <ng-template let-item="item">
+                <StackLayout>
+                    <Label  style="font-size: 15px;" [nsRouterLink]="['/item', item.id]" [text]="item.id +'. '+ item.name"></Label>
+                </StackLayout>
+            </ng-template>
+        </ListView>
+</GridLayout>
+    

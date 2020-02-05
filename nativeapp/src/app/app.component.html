@@ -1,0 +1,7 @@
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+        <GridLayout backgroundColor="gray" rows="80" columns=" *,*">
+            <Button text="Soccer Players' Page" [nsRouterLink]="['/soccer']" class="btn btn-primary btn-active" col="0"></Button>
+            <Button text="Artists Page" [nsRouterLink]="['/artists']" class="btn btn-primary btn-active" col="1"></Button>
+        </GridLayout>
+</StackLayout>
+<page-router-outlet></page-router-outlet>

@@ -1,0 +1,25 @@
+<ActionBar title="Player Details"></ActionBar>
+
+<GridLayout>
+    <GridLayout >
+        <FlexboxLayout flexDirection="column">
+            <FlexboxLayout class="m-15">
+                <Label class="h1" [text]="item.id + '. '"></Label>
+                <Label class="h1" [text]="item.name"></Label>
+                <Button text="Update Player" [nsRouterLink]="['/form']" backgroundColor="red" (tap)="updatePlayer()"></Button>
+                
+            </FlexboxLayout>
+            <FlexboxLayout class="m-10">
+            <label class="h2" text= "Role:"></label>
+            <Label class="h2 m-15" [text]="item.role"></Label>
+            <label class="h2" text= "Score:"></label>
+            <Label class="h2 m-15" [text]="score"></Label>
+            </FlexboxLayout>
+            <Button text="Add Goal Score"  (tap)="addScore()" style="background-color:rgb(16, 172, 211);"></Button> 
+            <Button text="Subtract Goal Score" *ngIf="showBtn"  (tap)="decScore()" style="background-color:rgb(228, 81, 36);" ></Button> 
+
+        </FlexboxLayout>
+    </GridLayout>
+
+</GridLayout>
+

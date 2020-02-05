@@ -1,0 +1,21 @@
+<!-- <ActionBar title="Registration Form - Activity 4" class="action-bar"></ActionBar> -->
+
+<GridLayout  verticalAlignment="top" width="230">
+        <ScrollView>
+            <StackLayout margin="5"  class="form">
+                <StackLayout class="form" padding="5" backgroundColor="#FFFFFF">
+
+                    <StackLayout class="nt-input">
+                        <Label text="Name" class="label font-weight-bold m-b-5"></Label>
+                        <TextField class="input" [(ngModel)]="name"></TextField>
+
+                        <Label text="Role" class="label font-weight-bold m-b-5"></Label>
+                        <TextField  class="input" [(ngModel)]="role"></TextField>
+                    <Button class="-primary -rounded-sm" backgroundColor="pink" text="Add Player" (tap)="addPlayer()" [nsRouterLink]="['/items']"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+</GridLayout>
+
+
